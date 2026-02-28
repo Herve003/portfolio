@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>portfolio_Hervé</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/all.min,css">
+        <style>
+            body {
+                margin: 0;
+                color: black;
+                background-color: rgba(20, 215, 241, 0.1);
+            }
+            main {
+                display: inline-block;
+                border-radius: 19%;
+                padding-left: 20px;
+                padding-right: 20px;
+                animation: slideUp 1s ease-in-out;
+            }
+            section {
+                width: 80%;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 0;
+                padding-bottom: 0;
+                display: inline-block;
+                border-radius: 10%;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 130px;
+                background-color: rgb(16, 201, 247);
+                color: black;
+                animation: slideUp 1.5s ease-in-out;
+            }
+            .container {
+                display: flex;
+                min-height: 100vh;
+            }
+            .left {
+                background-color: aqua;
+                width: 35%;
+                padding: 30px;
+                text-align: center;
+            }
+            .right {
+                width: 65%;
+                padding: 20px;
+                line-height: 1.6;
+                background-color: aquamarine;
+            }
+            .skill {
+                margin: 15px 0;
+                text-align: left;
+            }
+            .bar {
+                height: 8px;
+                background-color: rgb(16, 201, 247);
+                margin-top: 5px;
+            }
+            .html { width: 60%;}
+            .css { width: 50%;}
+            .GitHub { width: 30%;}
+            .right h2:hover {
+                color: white;
+                transition: 0.3s;
+                .bar {
+                    height: 8px;
+                    background-color: rgb(16, 201, 247);
+                    margin-top: 5px;
+                    border-radius: 5px;
+                }
+            }
+            img {
+                border-radius: 50%;
+                border: 5px solid rgb(7, 15, 131);
+                width: 190px;
+                height: 200px;
+                box-shadow: 0 0 100px rgb(7, 15, 131);
+            }
+            h1 {
+                color: black;
+                animation: slideUp 2s ease-in-out;
+            }
+            i {
+                color: blue;
+            }
+            p {
+                color: black;
+                margin: 20px;
+                animation: slideUp 1.8s ease-in-out;
+            }
+            h2 {
+                color: rgb(7, 15, 131);
+                border-bottom: 2px solid rgb(7, 15, 131);
+                padding-bottom: 5px;
+                animation: slideUp 2s ease-in-out;
+            }
+            @media (max-width: 768px){
+                .container {flex-direction: column;}
+                .left, .right {width: 100%;}
+                .left {text-align: center;}
+            }
+            @keyframes slideUp {
+                from {
+                    opacity: 1;
+                    transition: translateY(-50px);
+                }
+                to {
+                    opacity: 0;
+                    transition: translateY(0);
+                }
+            }
+        </style>
+</head>
+<body>
+    <section >  
+        <main class="container">
+            <div class="left">
+                <h1>RANNDRIANARIVOLA Jean Hervé</h1>
+                <p><strong><i>Etudiant en informatique-EMIT</i></strong></p>
+                <img src="photo.jpg" profile="photo">
+                <h2>CONTACT</h2>
+                <p>📞 +261381781105</p>
+                <p>📧 Jeanherverandrianarivola</p>
+            </div>
+            <div class="right">
+                <h2>PROFILE</h2>
+                <p>je suis Hervé,étudiant en L1  à EMIT Fianarantsoa;
+                 passionnée par la programmation et les
+                 nouvelles tecknologies.motivé et curieux;je developpe continuellement mes competence.</p>
+                <h2>FORMATION</h2>
+                <P>
+                2022:BEPC
+                </P>
+                <p>2025: Bacc Serie S</p>
+                <p>2026: L1 en Informatique</p>
+                <h2>COMPETENCES</h2>
+                <div class="skill">
+                    <span>html</span><div class="bar html"></div>
+                </div>
+                <div class="skill">
+                    <span>css</span><div class="bar css"></div>
+                </div>
+                <div class="skill">
+                    <span>GitHub</span><div class="bar GitHub"></div>
+                </div>
+                <center><span>&Jean Hervé_portfolio</span></center>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
